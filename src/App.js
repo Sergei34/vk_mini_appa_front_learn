@@ -14,7 +14,7 @@ const App = () => {
 	
 	const [messages, setMessages ] = useState ([])
 	
-	const SERVER_URL = 'http://localhost:5000'
+	const SERVER_URL = 'https://vk-mini-apps-server-learn.herokuapp.com'
 	const socket=useRef(null)
 
 
@@ -43,7 +43,7 @@ const App = () => {
 				...msg, currentUser:true
 			}:msg)
 	
-			setMessage(newMessages)
+			setMessages(newMessages)
 		})
 	
 			return () => {

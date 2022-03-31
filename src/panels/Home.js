@@ -21,7 +21,7 @@ const Home = ({ id, go, fetchedUser, messages, sendMessage  }) => {
 		const trimmed = text.trim()
 		if (trimmed)
 		{
-			sendMessage ({
+			 ({
 				messageText: text, 
 				senderName:`${fetchedUser.first_name} ${fetchedUser.last_name}`,	
 			})
